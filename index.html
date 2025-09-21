@@ -116,7 +116,7 @@
       </nav>
       <hr class="border-t-2 border-[#ECEDEF]" />
       <section
-        class="bg-gradient-to-r from-green-50 to-blue-50 min-h-[80vh] flex items-center"
+        class="bg-gradient-to-r from-green-50 to-blue-50 min-h-[90vh] flex items-center"
       >
         <div
           class="container mx-auto flex flex-col md:flex-row items-center justify-between px-8"
@@ -129,29 +129,51 @@
             </h1>
             <p class="text-gray-600 mb-6">
               We make it’s easier for talents and businesses to connect and we
-              make it <br> absolutely less charges. Hire Talents or Get Hired from
-              our platform and work <br> independently...
+              make it <br />
+              absolutely less charges. Hire Talents or Get Hired from our
+              platform and work <br />
+              independently...
             </p>
             <button class="px-6 py-3 rounded-full bg-[#007456] text-white">
               Find Work
             </button>
             <button
-              class="px-5 py-2 rounded-full border-2 border-[#007456] mr-3 hover:bg-[#007456] hover:text-white transition-colors duration-300 ease-in-out"
+              class="px-5 py-3 rounded-full border-2 border-[#007456] hover:bg-[#007456] hover:text-white transition-colors duration-300 ease-in-out"
             >
               Find Talent
             </button>
             <br />
-            <input
+            <!-- <input
               type="text"
               placeholder="Search by role, service,skill or keywords"
               name=""
               id=""
               class="mt-6 w-160 p-3 rounded-sm border-[#677181]"
             />
-            
+            <div class="relative">
+              <span class=" absolute bottom-1 right-1 p-2.5 bg-[#FA8C00] rounded-sm text-white">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+            </div> -->
+
+            <div
+              class="mt-6 w-full sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl relative"
+            >
+              <input
+                type="text"
+                placeholder="Search by role, service, skill or keywords"
+                class="w-full p-3 pr-12 rounded-sm border border-[#677181] focus:outline-none"
+              />
+              <button
+                class="absolute inset-y-0 right-0 flex items-center justify-center px-4 bg-[#FA8C00] text-white rounded-r-sm"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+
             <br />
             <button
-              class="px-5 py-2 rounded-lg border-2 mr-3  mt-8 border-[#677181] text-[#677181]"
+              class="px-5 py-2 rounded-lg border-2 mr-3 mt-8 border-[#677181] text-[#677181]"
             >
               Design & Creative <i class="fa-solid fa-arrow-right"></i>
             </button>
@@ -165,14 +187,14 @@
             >
               SEO <i class="fa-solid fa-arrow-right"></i>
             </button>
-            <br>
+            <br />
             <button
               class="px-5 py-2 rounded-lg border-2 mr-3 mt-8 border-[#677181] text-[#677181]"
             >
               Design & Creative <i class="fa-solid fa-arrow-right"></i>
             </button>
             <button
-              class="px-5 py-2 rounded-lg border-2  mt-8 border-[#677181] text-[#677181]"
+              class="px-5 py-2 rounded-lg border-2 mt-8 border-[#677181] text-[#677181]"
             >
               App Developer <i class="fa-solid fa-arrow-right"></i>
             </button>
@@ -184,13 +206,96 @@
             <img
               src="images/banner-right.png"
               alt="person"
-              class="rounded-3xl relative z-10 w-[350px]"
+              class="rounded-3xl relative z-10 w-[550px]"
             />
           </div>
         </div>
       </section>
     </header>
-    <main></main>
+    <main class="container mx-auto">
+      <section class="my-30">
+        <div class="flex justify-between mt-20">
+          <h2 class="text-4xl font-semibold">Popular Categories</h2>
+          <button class="px-5 py-3 rounded-full border-2 border-[#007456] text-[#007456] hover:bg-[#007456] hover:text-white transition-colors duration-300 ease-in-out cursor-pointer">
+            Browse all categories
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </button>
+        </div>
+        <div class="card-container flex justify-between gap-5 mt-5">
+          <div class="card card-dash bg-base-100 w-80 shadow-lg">
+            <div class="card-body">
+              <i class="fa-solid fa-globe"></i>
+              <h2 class="card-title">Website Development</h2>
+              <p>
+                Customer experience and account <br />
+                management jobs.
+              </p>
+              <p>6 Jobs</p>
+            </div>
+          </div>
+          <div class="card card-dash bg-base-100 w-80 shadow-lg">
+
+            <div class="card-body">
+              <i class="fa-solid fa-laptop-code"></i>
+              <h2 class="card-title">Mobile App Development</h2>
+              <p>
+                Customer experience and account <br />
+                management jobs.
+              </p>
+              <p>18 Jobs</p>
+            </div>
+          </div>
+          <div class="card card-dash bg-base-100 w-80 shadow-lg" >
+            <div class="card-body">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <h2 class="card-title">Digital Marketing</h2>
+              <p>
+                Customer experience and account <br />
+                management jobs.
+              </p>
+              <p>22 Jobs</p>
+            </div>
+          </div>
+          <div class="card card-dash bg-base-100 w-80 shadow-lg">
+            <div class="card-body">
+            <i class="fa-solid fa-circle-play"></i>
+              <h2 class="card-title">Video Editing</h2>
+              <p>
+                Customer experience and account <br />
+                management jobs.
+              </p>
+              <p>8 Jobs</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Latest Jobs -->
+      <section>
+        <h2 class="text-4xl font-semibold">Latest Job</h2>
+        <div class="card-container mb-32 justify-between">
+          <div class="card w-96 bg-base-100 shadow-sm">
+            <div class="card-body">
+              <div class="flex justify-between">
+                <h2 class="text-xl font-semibold">Logo Design for Business Loan Brokerage</h2>
+
+              </div>
+              <ul class="mt-6 flex flex-col gap-2 text-xs">
+                <p>Jun 5, 2025 <span>MidLevel</span>Posted 3 hours ago</p>
+                <p>$260 <button>Fixed</button> </p>
+                <p>We are seeking a talent graphic designer to create a professional logo for Our</p>
+              </ul>
+                <button class="px-5 py-2 rounded-lg border-2 mr-3 mt-8 border-[#677181] text-[#677181]">Business Card Design</button>
+                <button>Graphcs Design</button>
+                <button>Graphcs  Design</button>
+                <button>Adobe Illiustrator</button>
+              <div class="mt-6">
+                <button class="text-[#007456]">View More <i class="fa-solid fa-arrow-right"></i> </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
