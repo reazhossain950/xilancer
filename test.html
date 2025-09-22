@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Category Slider</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Section -->
+    <section class="max-w-7xl mx-auto px-6 py-12">
+      <!-- Header -->
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-2xl font-semibold">Browse Service by Categories</h2>
+        <a
+          href="#"
+          class="px-4 py-2 border border-green-600 text-green-600 rounded-full text-sm hover:bg-green-600 hover:text-white transition"
+        >
+          View all Services →
+        </a>
+      </div>
+
+      <!-- Slider -->
+      <div class="relative">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Card 1 -->
+            <div class="swiper-slide">
+              <div
+                class="relative rounded-xl overflow-hidden shadow-lg "
+              >
+                <img
+                  src="https://picsum.photos/400/250?random="
+                  class="w-full h-52 object-cover"
+                />
+                <div
+                  class="absolute top-0 40 flex flex-col justify-end p-4 text-white"
+                >
+                  <p class="text-sm">8 Services</p>
+                  <h3 class="font-semibold text-lg">Web Development</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="swiper-slide">
+              <div
+                class="relative rounded-xl overflow-hidden shadow-lg bg-black/40"
+              >
+                <img
+                  src="https://picsum.photos/400/250?random=2"
+                  class="w-full h-52 object-cover"
+                />
+                <div
+                  class="absolute top-0 flex flex-col justify-end p-4 text-white"
+                >
+                  <p class="text-sm">12 Services</p>
+                  <h3 class="font-semibold text-lg">Content Writer</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="swiper-slide">
+              <div
+                class="relative rounded-xl overflow-hidden shadow-lg bg-black/40"
+              >
+                <img
+                  src="https://picsum.photos/400/250?random=3"
+                  class="w-full h-52 object-cover"
+                />
+                <div
+                  class="absolute top-0 flex flex-col justify-end p-4 text-white"
+                >
+                  <p class="text-sm">25 Services</p>
+                  <h3 class="font-semibold text-lg">Design & Creative</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="swiper-slide">
+              <div
+                class="relative rounded-xl overflow-hidden shadow-lg bg-black/40"
+              >
+                <img
+                  src="https://picsum.photos/400/250?random=4"
+                  class="w-full h-52 object-cover"
+                />
+                <div
+                  class="absolute top-0flex flex-col justify-end p-4 text-white"
+                >
+                  <p class="text-sm">9 Services</p>
+                  <h3 class="font-semibold text-lg">SEO Expert</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="swiper-slide">
+              <div class="relative rounded-xl overflow-hidden shadow-lg">
+                <img
+                  src="https://picsum.photos/400/250?random=5"
+                  class="w-full h-52 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-black/40 flex flex-col justify-end p-4 text-white"
+                >
+                  <p class="text-sm">14 Services</p>
+                  <h3 class="font-semibold text-lg">Digital Marketing</h3>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Nav Buttons -->
+        <div
+          class="swiper-button-prev !w-10 !h-10 !rounded-full !bg-white !text-black shadow-md after:!text-lg"
+        >
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div
+          class="swiper-button-next !w-10 !h-10 !rounded-full !bg-green-600 !text-white shadow-md after:!text-lg"
+        >
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        breakpoints: {
+          640: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+          1280: { slidesPerView: 4 },
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
